@@ -74,6 +74,8 @@
   opacity: 0.2;
 }
 
+.mirror__image { object-fit: fill; }
+
 .mirror__frame { z-index: 1;}
 
 .middle-stack {
