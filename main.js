@@ -4,8 +4,8 @@ navigator.mediaDevices
   .getUserMedia({
     audio: false,
     video: {
-      width: { exact: 300 },
-      height: { exact: 500 },
+      width: { min: 270, max: 270 },
+      height: { min: 480, max: 480},
       facingMode: "user",
     },
   })
