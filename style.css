@@ -74,7 +74,7 @@
   opacity: 0.2;
 }
 
-.mirror__image { object-fit: fill; }
+.mirror__image { object-fit: cover; }
 
 .mirror__frame { z-index: 1;}
 
