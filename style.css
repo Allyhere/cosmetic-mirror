@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  --color-surface: hsl(45, 23%, 90%);
+  --color-text: hsl(175, 100%, 10%);
+  --font-cursive: 'Dancing Script', cursive;
+  --font-sans: 'Segoe UI', sans-serif;
+}
+
+.brand {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+}
+
+.brand__logo {
+  display: grid;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-sans);
+  letter-spacing: 0.25ch;
+  line-height: 100%;
+}
+
+.mirror {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  gap: 1ch;
+}
+
+.mirror__heading {
+  max-width: 12ch;
+  margin-block-start: 2rem;
+  color: var(--color-text);
+  font-family: var(--font-cursive);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.mirror__container {
+  display: grid;
+  grid-template: max-content / max-content;
+  place-items: center;
+  width: max-content;
+}
+
+.mirror__container > * { grid-area: 1 / 1;}
+
+.mirror__filter {
+  position: relative;
+  clip-path: ellipse(45% 40% at 50% 50%);
+  filter:
+    brightness(100%)
+    contrast(100%)
+    opacity(100%)
+    saturate(100%);
+  mix-blend-mode: overlay;
+}
+.mirror__filter::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: screen;
+  background: #fa00cc;
+  opacity: 0.2;
+}
+
+.mirror__frame { z-index: 1;}
+
+.middle-stack {
+  display: grid;
+  grid-template-columns: 1fr min(820px, 100%) 1fr;
+  min-block-size: 100vh;
+}
+
+.middle-stack > * { grid-column: 2; }
+
+.full-width { grid-column: 1 / -1; }

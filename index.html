@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmetic Mirror</title>
+  </head>
+  <body>
+    <main class="middle-stack">
+      <header class="brand [ full-width ]">
+        <h1 class="brand__logo"><span>Cosmetic</span><span>Mirror</span></h1>
+      </header>
+      <section class="mirror">
+        <h2 class="mirror__heading">Your beauty is the real beauty</h2>
+        <div class="mirror__container">
+          <div class="mirror__filter">
+            <video
+              autoplay
+              width="300"
+              height="500"
+              class="mirror__image"
+              data-video
+            >
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+          <img
+            width="300"
+            height="500"
+            src="/public/frame.png"
+            class="mirror__frame"
+            role="presentation"
+          />
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
