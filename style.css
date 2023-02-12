@@ -84,6 +84,14 @@
   min-block-size: 100vh;
 }
 
+.credits {
+  padding-block: 1ch;
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  text-align: center;
+}
+
 .middle-stack > * { grid-column: 2; }
 
 .full-width { grid-column: 1 / -1; }
